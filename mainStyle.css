@@ -351,6 +351,48 @@ body, h1, h2, h3, h4, h5, h6, p{
 }
 
 
+/* gallery section  */
+.gallery{
+    padding: 3rem 0;
+}
+.gallery h2{
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.gallery a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+ 
+.gallery .button-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* booking section  */
+.booking{
+    background-color: #141414;
+    padding: 5rem 0;
+    color: var(--white);
+}
+.booking form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 4rem;
+}
+.booking input{
+    padding: 0.3rem 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 300px;
+}
+
+
 
 
 
@@ -420,6 +462,31 @@ body, h1, h2, h3, h4, h5, h6, p{
 }
 
 
+/* about page styling */
+.about-section-banner{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/banner1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about-section-banner .banner-content{
+    height: 30vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-section h1, .about-section h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+.about-section p, .about-section li {
+    font-size: 1.1rem;
+    font-family: 'verdana', verdana, arial, helvetica;
+}
+
+
 
 @media (max-width: 900px) {
     .preNav, .nav a, .social-nav{
@@ -443,6 +510,14 @@ body, h1, h2, h3, h4, h5, h6, p{
     }
     .menu-toggle i{
         font-size: 1.5rem;
+    }
+}
+@media (max-width: 767px) {
+    .gallery .small-screen{
+        display: none;
+    }
+    .gallery .big-screen{
+        margin-bottom: 1rem;
     }
 }
 
